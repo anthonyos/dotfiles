@@ -82,6 +82,10 @@ let g:airline_theme='solarized'
 " Enable 256 colours
 set t_Co=256
 
+"""""""""""""""""""""""""""""
+"""""""PLUGIN SETTINGS"""""""
+"""""""""""""""""""""""""""""
+
 " Recommended settings for syntastic plugin
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
