@@ -105,3 +105,8 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " gitgutter plugin settings
 " always show signs gutter
 let g:gitgutter_sign_column_always = 1
+
+" NERDTree plugin settings
+" Auto-open a NERDTree, even if no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
