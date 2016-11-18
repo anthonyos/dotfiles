@@ -13,6 +13,9 @@ set nocompatible
 " Set autoindent to tell vim to indent at same level on next line
 set autoindent
 
+" Set updatetime to shorter than default, in ms (for gitgutter signs)
+set updatetime=250
+
 " Set autoindent to indent correctly based on filetype, for fn's etc.
 filetype plugin indent on
 
@@ -98,3 +101,7 @@ let g:syntastic_check_on_wq = 0
 " YouCompleteMe plugin settings to auto-close top preview window
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" gitgutter plugin settings
+" always show signs gutter
+let g:gitgutter_sign_column_always = 1
